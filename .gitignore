@@ -1,0 +1,5 @@
+# Root ignore to cover all subfolders
+**/node_modules/
+**/.env
+**/dist/
+**/.DS_Store

@@ -1,0 +1,21 @@
+node_modules/
+.env
+*.log
+dist/
+.DS_Store
+serviceAccountKey.json
+*.pem
+*.key
+# Local environment overrides
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Frontend build folder (if you use Vite/React)
+build/
+dist/
+
+# IDE settings
+.vscode/
+.idea/
