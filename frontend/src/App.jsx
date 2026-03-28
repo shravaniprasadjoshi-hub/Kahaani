@@ -5,10 +5,12 @@ import AuthPage from './pages/AuthPage'
 import ArtistPage from './pages/ArtistPage'
 import BuyerPage from './pages/BuyerPage'
 import './styles/globals.css'
+import GlobalDecor from "./components/GlobalDecor";
 
 function App() {
   return (
     <BrowserRouter>
+    <GlobalDecor /> 
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />

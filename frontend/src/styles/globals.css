@@ -144,3 +144,58 @@ h1, h2, h3 {
     radial-gradient(ellipse 60% 80% at 90% 80%, rgba(74,173,168,0.10) 0%, transparent 70%);
   pointer-events: none;
 }
+
+.art-card-container {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6); /* Translucent white */
+  backdrop-filter: blur(10px); /* The "frosted" effect */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease;
+}
+
+.art-card-container:hover {
+  transform: translateY(-2px); 
+}
+
+.icon-wrapper {
+  width: 58px;
+  height: 58px;
+  background: #ffffff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  overflow: hidden; 
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); 
+  flex-shrink: 0;
+}
+
+.art-card-icon {
+  width: 80%; 
+  height: 80%;
+  object-fit: contain;
+  display: block;
+}
+
+.art-card-container:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 30px rgba(193, 96, 58, 0.1);
+  background: #ffffff;
+}
+
+/* rarity Tag Colors */
+.rarity-tag.critical { background: #ffebee; color: #d32f2f; }
+.rarity-tag.endangered { background: #fff3e0; color: #ef6c00; }
+.rarity-tag.vulnerable { background: #fce4ec; color: #c2185b; }
+.rarity-tag.stable { background: #e0f2f1; color: #00796b; }
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
