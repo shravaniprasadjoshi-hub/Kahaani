@@ -99,16 +99,16 @@ export default function ImageRestoration({ imageSrc }) {
         {/* Labels */}
         <div style={{
           position: 'absolute', bottom: 10, left: 14,
-          fontSize: '0.72rem', color: 'white', fontWeight: 700,
-          background: 'rgba(0,0,0,0.45)', padding: '2px 8px', borderRadius: 4,
-          pointerEvents: 'none',
-        }}>BEFORE</div>
-        <div style={{
-          position: 'absolute', bottom: 10, right: 14,
-          fontSize: '0.72rem', color: '#C1603A', fontWeight: 700,
-          background: 'rgba(255,255,255,0.88)', padding: '2px 8px', borderRadius: 4,
+          fontSize: '1rem', color: 'white', fontWeight: 700,
+          background: 'rgba(0, 0, 0, 0.45)', padding: '2px 8px', borderRadius: 4,
           pointerEvents: 'none',
         }}>AI ENHANCED</div>
+        <div style={{
+          position: 'absolute', bottom: 10, right: 14,
+          fontSize: '1rem', color: '#C1603A', fontWeight: 700,
+          background: 'rgba(255,255,255,0.88)', padding: '2px 8px', borderRadius: 4,
+          pointerEvents: 'none',
+        }}>BEFORE</div>
       </div>
 
       {/* Caption */}
